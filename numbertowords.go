@@ -6,12 +6,12 @@ import "errors"
 var words = [21]string{"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"}
 var tenwords = [10]string{"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"}
 
-// maxNumber is const
-const maxNumber = 99999
+// MaxNumber is const
+const MaxNumber = 99999
 
 // Convert number to word
 func Convert(number int) (string, error) {
-	if number < 0 || number > maxNumber {
+	if number < 0 || number > MaxNumber {
 		return "", errors.New("number is out of range")
 	}
 
